@@ -20,3 +20,10 @@ license: (ISC)
 ...
 ...
 ```
+
+## Run Server
+Run normally:
+> node path/server.js
+
+Prerequisite: have nodemon installed
+> npm install -g nodemon
