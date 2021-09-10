@@ -19,6 +19,7 @@ license: (ISC)
 ...
 ...
 ...
+$ npm install express // Get express for the project
 ```
 
 ## Run Server
@@ -27,3 +28,6 @@ Run normally:
 
 Prerequisite: have nodemon installed
 > npm install -g nodemon
+
+Run server with nodemon (dynamic)
+> nodemon path/server.js

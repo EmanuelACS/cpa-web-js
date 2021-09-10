@@ -1,0 +1,22 @@
+{
+  "name": "testlab2",
+  "version": "1.0.0",
+  "description": "Second server app that uses JS objects and arrays and JSON",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "JSON",
+    "Express",
+    "JS",
+    "object",
+    "array"
+  ],
+  "author": "Emanuel Dobra",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
