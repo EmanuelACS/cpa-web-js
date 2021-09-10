@@ -2,6 +2,7 @@
 Semester3 - Web Programming with Javascript
 
 ## Initialize package JSON
+Prerequisite: Have node & npm installed.
 ```
 $ npm init
 ...
@@ -14,20 +15,26 @@ entry point: (current) // Enter entry point i.e "server.js"
 test command: 
 git repository:
 keywords: // Enter keywords (optional) i.e "node.js comp-206 lab1"
-author: // Name i.e Emanuel Dobra
+author: // Name 
 license: (ISC) 
 ...
 ...
 ...
-$ npm install express // Get express for the project
 ```
+
+## Add Express to the app
+```
+// Needs to be ran for every project
+$ npm install express
+```
+
 
 ## Run Server
 Run normally:
 > node path/server.js
 
-Prerequisite: have nodemon installed
-> npm install -g nodemon
-
 Run server with nodemon (dynamic)
 > nodemon path/server.js
+
+Prerequisite: have nodemon installed
+> npm install -g nodemon

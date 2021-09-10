@@ -14,6 +14,10 @@ app.get("/", (req, res) => {
     res.send("<h1>Title 101</h1>");
 })
 
+//
+app.get("/hello", (req, res) => {
+  res.send("Test")
+})
 
 // localhost:3000
 // htto://(use your ip address):3000
