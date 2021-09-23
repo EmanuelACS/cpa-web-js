@@ -96,15 +96,15 @@
  * schedule.
  */
 
-    const sem5ClassList = {};
+    const fallClassList = {};
 
-    sem5ClassList.comp340Lec = comp340Lec;
-    sem5ClassList.comp340LabA = comp340LabA;
-    sem5ClassList.comp340LabB = comp340LabB;
-    sem5ClassList.comp31Lab = comp31Lab;
-    sem5ClassList.comp31Lec = comp31Lec;
-    sem5ClassList.comp206Lab = comp206Lab;
-    sem5ClassList.comp206Lec = comp206Lec;
+    fallClassList.comp340Lec = comp340Lec;
+    fallClassList.comp340LabA = comp340LabA;
+    fallClassList.comp340LabB = comp340LabB;
+    fallClassList.comp31Lab = comp31Lab;
+    fallClassList.comp31Lec = comp31Lec;
+    fallClassList.comp206Lab = comp206Lab;
+    fallClassList.comp206Lec = comp206Lec;
     
 /**
  * The following section demonstrates how to create a JavaScript array containing
@@ -114,15 +114,15 @@
  * your weekly schedule
  */
 
- sem5WeeklySchedule = [    
-    sem5ClassList["comp340Lec"],
-    sem5ClassList["comp340LabA"],
-    sem5ClassList["comp340LabB"],
-    sem5ClassList["comp31Lab"],
-    sem5ClassList["comp31Lec"],
-    sem5ClassList["comp340Lec"],
-    sem5ClassList["comp206Lec"],
-    sem5ClassList["comp206Lab"]
+ fallWeeklySchedule = [    
+    fallClassList["comp340Lec"],
+    fallClassList["comp340LabA"],
+    fallClassList["comp340LabB"],
+    fallClassList["comp31Lab"],
+    fallClassList["comp31Lec"],
+    fallClassList["comp340Lec"],
+    fallClassList["comp206Lec"],
+    fallClassList["comp206Lab"]
 ]
 
 /**
@@ -134,7 +134,7 @@
  */
 
 
-const sem5DailySchedule = {
+const fallDailySchedule = {
     monday : [comp340LabB, comp31Lab],
     tuesday : [comp340Lec,comp31Lec, comp340LabA],
     wednesday : [],
@@ -149,9 +149,9 @@ const sem5DailySchedule = {
 
 const masterSchedule = {
 
-    dailySchedule:sem5DailySchedule,
-    weeklySchedule:sem5WeeklySchedule,
-    classList:sem5ClassList,
+    dailySchedule:fallDailySchedule,
+    weeklySchedule:fallWeeklySchedule,
+    classList:fallClassList,
 
 }
 
