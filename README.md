@@ -26,6 +26,8 @@ license: (ISC)
 ```
 // Needs to be ran for every project
 $ npm install express
+const express=require('express') // express config
+const app=express()
 ```
 
 
@@ -38,3 +40,8 @@ Run server with nodemon (dynamic)
 
 Prerequisite: have nodemon installed
 > npm install -g nodemon
+
+Prerequisites for ejs: 
+> npm install ejs
+> const ejs=require('ejs') // ejs config
+> app.set('view engine', 'ejs')
