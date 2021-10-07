@@ -1,0 +1,31 @@
+{
+  "name": "assignment1",
+  "version": "1.0.0",
+  "description": "Web application that allows user to query weekly weather data for some Ontario locations.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmanuelACS/cpa-web-js.git"
+  },
+  "keywords": [
+    "js",
+    "assignment1",
+    "weather",
+    "node.js",
+    "ejs",
+    "express"
+  ],
+  "author": "Emanuel Dobra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmanuelACS/cpa-web-js/issues"
+  },
+  "homepage": "https://github.com/EmanuelACS/cpa-web-js#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
