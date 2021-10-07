@@ -1,0 +1,16 @@
+{
+  "name": "pizza",
+  "version": "1.0.0",
+  "description": "Pizza Order Form",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pizza",
+    "ejs",
+    "js"
+  ],
+  "author": "Emanuel Dobra",
+  "license": "ISC"
+}
