@@ -8,10 +8,11 @@ const app=express();
 app.set('view engine', 'ejs');
 app.listen(3000);
 
-app.get("/", (req,res) => {
+// localhost:3000/
+app.get("/", (req, res)=>{
     res.send("<h1>Weather Forecast</h1>");
+    res.sendFile(__dirname + "/public/index.html");
 })
-
 // Sends all raw weather data
 app.get("/weather", (req, res) => {
     let weather = weeklyWeather;
