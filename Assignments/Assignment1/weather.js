@@ -7,11 +7,14 @@
 /**
  * The following section declares the raw data that will be used to make up the weather.
  * A JavaScript object is declared and initialized for each day.
- * Currently all raw data is almost identical, will change to unique values at a later date.
+ * Currently all raw data is identical, will change to unique values at a later date.
  */
 
 // Kingston Data
-var kingstonOct3 = {
+var kingstonOct3, kingstonOct4, kingstonOct5, kingstonOct6,
+     kingstonOct7, kingstonOct8, kingstonOct9 = {
+    description: "Light Rain",
+    imgFile: "", // Will be added later in case I need images
     temperature: 20,
     feelsLike: 22,
     night: 14,
@@ -20,233 +23,43 @@ var kingstonOct3 = {
     windGust: 38,
     sunHrs: 0,
     rain: "~5mm",
-}
-
-var kingstonOct4 = {
-    temperature: 24,
-    feelsLike: 19,
-    night: 12,
-    pop: 65,
-    wind: "15NW",
-    windGust: 26,
-    sunHrs: 2,
-    rain: "~4mm",
-}
-
-var kingstonOct5 = {
-    temperature: 90,
-    feelsLike: 19,
-    night: 12,
-    pop: 65,
-    wind: "15EW",
-    windGust: 26,
-    sunHrs: 2,
-    rain: "~4mm",
-}
-
-var kingstonOct6 = {
-    temperature: 80,
-    feelsLike: 19,
-    night: 12,
-    pop: 65,
-    wind: "15EW",
-    windGust: 26,
-    sunHrs: 2,
-    rain: "~4mm",
-}
-
-var kingstonOct7 = {
-    temperature: 70,
-    feelsLike: 19,
-    night: 12,
-    pop: 65,
-    wind: "15EW",
-    windGust: 26,
-    sunHrs: 2,
-    rain: "~4mm",
-}
-
-var kingstonOct8 = {
-    temperature: 60,
-    feelsLike: 19,
-    night: 12,
-    pop: 65,
-    wind: "15EW",
-    windGust: 26,
-    sunHrs: 2,
-    rain: "~4mm",
-}
-
-var kingstonOct9 = {
-    temperature: 50,
-    feelsLike: 19,
-    night: 12,
-    pop: 65,
-    wind: "15EW",
-    windGust: 26,
-    sunHrs: 2,
-    rain: "~4mm",
 }
 
 // Toronto Data
-var torontoOct3 = {
-    temperature: 20,
-    feelsLike: 22,
-    night: 14,
-    pop: 80,
-    wind: "25W",
-    windGust: 38,
-    sunHrs: 0,
-    rain: "~5mm",
-}
-
-var torontoOct4 = {
-    temperature: 24,
-    feelsLike: 19,
-    night: 12,
-    pop: 65,
-    wind: "15EW",
-    windGust: 26,
-    sunHrs: 2,
-    rain: "~4mm",
-}
-
-var torontoOct5 = {
-    temperature: 90,
-    feelsLike: 19,
-    night: 12,
-    pop: 65,
-    wind: "15EW",
-    windGust: 26,
-    sunHrs: 2,
-    rain: "~4mm",
-}
-
-var torontoOct6 = {
-    temperature: 80,
-    feelsLike: 19,
-    night: 12,
-    pop: 65,
-    wind: "15EW",
-    windGust: 26,
-    sunHrs: 2,
-    rain: "~4mm",
-}
-
-var torontoOct7 = {
-    temperature: 70,
-    feelsLike: 19,
-    night: 12,
-    pop: 65,
-    wind: "15EW",
-    windGust: 26,
-    sunHrs: 2,
-    rain: "~4mm",
-}
-
-var torontoOct8 = {
-    temperature: 60,
-    feelsLike: 19,
-    night: 12,
-    pop: 65,
-    wind: "15EW",
-    windGust: 26,
-    sunHrs: 2,
-    rain: "~4mm",
-}
-
-var torontoOct9 = {
-    temperature: 50,
-    feelsLike: 19,
-    night: 12,
-    pop: 65,
-    wind: "15EW",
-    windGust: 26,
-    sunHrs: 2,
-    rain: "~4mm",
+var torontoOct3, torontoOct4, torontoOct5, torontoOct6,
+     torontoOct7, torontoOct8, torontoOct9 = {
+    description: "A mix of sun and clouds",
+    imgFile: "",
+    temperature: 25,
+    feelsLike: 27,
+    night: 20,
+    pop: 30,
+    wind: "5SE",
+    windGust: 23,
+    sunHrs: 4,
+    rain: "~1mm",
 }
 
 // Hamilton Data
-var hamiltonOct3 = {
-    temperature: 20,
-    feelsLike: 22,
-    night: 14,
-    pop: 80,
-    wind: "25W",
-    windGust: 38,
-    sunHrs: 0,
-    rain: "~5mm",
+var hamiltonOct3, hamiltonOct4, hamiltonOct5, hamiltonOct6,
+     hamiltonOct7, hamiltonOct8, hamiltonOct9 = {
+    description: "Mainly Cloudy",
+    imgFile: "",
+    temperature: 14,
+    feelsLike: 6,
+    night: 10,
+    pop: 20,
+    wind: "30NW",
+    windGust: 46,
+    sunHrs: 2,
+    rain: "~2mm",
 }
 
-var hamiltonOct4 = {
-    temperature: 24,
-    feelsLike: 19,
-    night: 12,
-    pop: 65,
-    wind: "15EW",
-    windGust: 26,
-    sunHrs: 2,
-    rain: "~4mm",
-}
-
-var hamiltonOct5 = {
-    temperature: 90,
-    feelsLike: 19,
-    night: 12,
-    pop: 65,
-    wind: "15EW",
-    windGust: 26,
-    sunHrs: 2,
-    rain: "~4mm",
-}
-
-var hamiltonOct6 = {
-    temperature: 80,
-    feelsLike: 19,
-    night: 12,
-    pop: 65,
-    wind: "15EW",
-    windGust: 26,
-    sunHrs: 2,
-    rain: "~4mm",
-}
-
-var hamiltonOct7 = {
-    temperature: 70,
-    feelsLike: 19,
-    night: 12,
-    pop: 65,
-    wind: "15EW",
-    windGust: 26,
-    sunHrs: 2,
-    rain: "~4mm",
-}
-
-var hamiltonOct8 = {
-    temperature: 60,
-    feelsLike: 19,
-    night: 12,
-    pop: 65,
-    wind: "15EW",
-    windGust: 26,
-    sunHrs: 2,
-    rain: "~4mm",
-}
-
-var hamiltonOct9 = {
-    temperature: 50,
-    feelsLike: 19,
-    night: 12,
-    pop: 65,
-    wind: "15EW",
-    windGust: 26,
-    sunHrs: 2,
-    rain: "~4mm",
-}
 
 /**
  * The following section defines a 'dailyWeatherForecast' object 
  * This object can be used to return the weather for any given weekday.
+ * Not fully sure whether I want days to be displayed, or whether I want the date instead
  */ 
 const dailyWeatherForecast = {
     kingston: {
