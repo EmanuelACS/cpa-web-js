@@ -45,3 +45,6 @@ Prerequisites for ejs:
 > npm install ejs
 > const ejs=require('ejs') // ejs config
 > app.set('view engine', 'ejs')
+
+## Mongo Database
+> npm install mongodb

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Data</title>
+    <style>
+        table, td, th {
+            border: solid green;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        th {
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <h1><%= weatherLocation %> weather</h1>
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>Description</th>
+            <th>Temperature</th>
+            <th>Feels Like</th>
+            <th>Night</th>
+            <th>POP</th>
+            <th>Wind</th>
+            <th>Wind Gust</th>
+            <th>Sun Hours</th>
+            <th>Rain</th>
+        </tr>
+        <%
+            for (var i=0; i<weatherVariable.length; i++) {
+                let weekday = "Monday";
+                if (i == 1) 
+                    weekday = "Tuesday";
+                else if (i == 2) 
+                    weekday = "Wednesday";
+                else if (i == 3) 
+                    weekday = "Thursday";
+                else if (i == 4)
+                    weekday = "Friday";
+                else if (i == 5) 
+                    weekday = "Saturday";
+                else if (i == 6)
+                    weekday = "Sunday";
+
+        %>
+            <!-- Loop Body Goes Here -->
+            <tr>
+                <td><%= weekday %></td>
+                <td><%= weatherVariable[i].description %></td>
+                <td><%= weatherVariable[i].temperature %>&#176;C</td>
+                <td><%= weatherVariable[i].feelsLike %>&#176;C</td>
+                <td><%= weatherVariable[i].night %>&#176;C</td>
+                <td><%= weatherVariable[i].pop %>%</td>
+                <td><%= weatherVariable[i].wind %></td>
+                <td><%= weatherVariable[i].windGust %> kph</td>
+                <td><%= weatherVariable[i].sunHrs %> hrs</td>
+                <td><%= weatherVariable[i].rain %></td>
+            </tr>   
+        <% } %>
+    </table>
+</body>
+</html>

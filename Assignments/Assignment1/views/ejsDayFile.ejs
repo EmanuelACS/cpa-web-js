@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Data</title>
+    <style>
+        table, td, th {
+            border: solid green;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        th {
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <h1><%= weatherLocation %> weather this <%= weatherDay %></h1>
+    <table>
+        <tr>
+            <th>Description</th>
+            <th>Temperature</th>
+            <th>Feels Like</th>
+            <th>Night</th>
+            <th>POP</th>
+            <th>Wind</th>
+            <th>Wind Gust</th>
+            <th>Sun Hours</th>
+            <th>Rain</th>
+        </tr>
+        <tr>
+            <td><%= weatherVariable[0].description %></td>
+            <td><%= weatherVariable[0].temperature %>&#176;C</td>
+            <td><%= weatherVariable[0].feelsLike %>&#176;C</td>
+            <td><%= weatherVariable[0].night %>&#176;C</td>
+            <td><%= weatherVariable[0].pop %>%</td>
+            <td><%= weatherVariable[0].wind %></td>
+            <td><%= weatherVariable[0].windGust %> kph</td>
+            <td><%= weatherVariable[0].sunHrs %> hrs</td>
+            <td><%= weatherVariable[0].rain %></td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
