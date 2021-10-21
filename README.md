@@ -48,3 +48,10 @@ Prerequisites for ejs:
 
 ## Mongo Database
 > npm install mongodb
+
+## Extra
+```
+$ npm install -g express-generator
+$ npx express --view=ejs
+
+```
