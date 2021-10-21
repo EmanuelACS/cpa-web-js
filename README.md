@@ -53,5 +53,5 @@ Prerequisites for ejs:
 ```
 $ npm install -g express-generator
 $ npx express --view=ejs
-
+$ npm install
 ```
