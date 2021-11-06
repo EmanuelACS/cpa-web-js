@@ -15,16 +15,7 @@ router.get('/', (req, res) => {
 
 
 router.get('/send', (req,res)=>{
-  console.log("Query: ", req.query);
-  parseInt
-  let criteria = {
-    bedrooms:{$gte: parseInt(req.query.bedrooms)}, // parseInt(req.query.bedrooms),
-    number_of_reviews:{$gte:5},
-    "address.country_code" : "US",
-    amenities : {$in : ['Wifi', 'Coffee maker']}
-  }
-
-  mongoQueries.findListing(res, criteria);
+  mongoQueries.findListing(res);
 })
 
 
